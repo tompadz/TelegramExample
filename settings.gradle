@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 include ':app'
-include ':domain'
-include ':data'
 include ':libtd'
+include ':data'
+include ':domain'

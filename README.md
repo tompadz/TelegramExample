@@ -2,25 +2,34 @@
 
 # Telegram Example
 
-A telegram client for android created using tdlib library and built with [Jetpack Compose](https://developer.android.com/jetpack/compose).
+A telegram client for android created using **tdlib** library. 
+</br>
+This is a modified example using **mvvm** pattern and **clean architecture**, also I use libraries: **hilt**, **navigation components** and **kotlin coroutine**.
+I did not add a specific UI, you can use both **XML** and **Jetpack Compose**.
+</br></br>
+Original repository - [indritbashkimi/TelegramExample](https://github.com/indritbashkimi/TelegramExample)
 
-To try out this app, you need to: 
-* Install the latest **Canary** of Android Studio
-* Download the **tdlib** android library from [https://core.telegram.org/tdlib/tdlib.zip](https://core.telegram.org/tdlib/tdlib.zip) and extract the zip file to the root folder of the project
-* Obtain application identifier hash for Telegram API access at [https://my.telegram.org](https://my.telegram.org) and store them in the android resources. For example in values/api_keys.xml:
+## To try out this app, you need to: 
+* Install the latest of Android Studio
+* Download the **tdlib** android library from [tdlib.zip](https://core.telegram.org/tdlib/tdlib.zip) and extract the zip file to the root folder of the project like:
+```text
+... some files
+- app
+- data 
+- domain 
+- libtd
+... some files
+```
+Android studio itself will define this module and add it to other modules, 
+in case it doesn't happen you just need to add the **libtd folder** to **application modules**.
+* Obtain application identifier hash for Telegram API access at [telegram.org](https://my.telegram.org) 
+and store them in the android resources. For example in **data/res/values/telegram_keys.xml**:
 ```
 <resources>
     <integer name="telegram_api_id">your integer api id</integer>
     <string name="telegram_api_hash">your string api hash</string>
 </resources>
 ```
-
-This app is **work in progress**. Features implemented so far:
-- [x] Login
-- [x] Show chat list
-- [ ] Show chat messages
-- [ ] Send messages
-- [ ] ...
 
 ## License
     Copyright (c) 2020 Indrit Bashkimi

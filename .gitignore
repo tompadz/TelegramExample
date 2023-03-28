@@ -17,4 +17,3 @@ local.properties
 # Project exclude paths
 /libtd/build/
 /libtd/build/intermediates/javac/debug/classes/
-/data/src/main/res/values/api_keys.xml

@@ -1,4 +1,4 @@
-package com.ibashkimi.telegram
+package com.ibashkimi.telegram.appication
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
